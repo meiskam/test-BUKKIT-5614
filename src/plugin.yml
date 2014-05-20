@@ -1,0 +1,11 @@
+name: BUKKIT5614
+version: 1.0
+description: Spawns a meiskam head with /b5614
+author: meiskam
+
+main: org.shininet.bukkit.test.B5614.BUKKIT5614Plugin
+database: false
+
+commands:
+  b5614:
+    description: Spawns a meiskam head
