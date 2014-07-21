@@ -1,6 +1,7 @@
 package org.shininet.bukkit.test.B5614;
 
 import org.bukkit.Material;
+import org.bukkit.SkullType;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -18,7 +19,7 @@ public class BUKKIT5614Plugin extends JavaPlugin {
         }
         Player player = (Player)sender;
 
-        ItemStack itemStack = new ItemStack(Material.SKULL_ITEM, 1);
+        ItemStack itemStack = new ItemStack(Material.SKULL_ITEM, 1, (short)SkullType.PLAYER.ordinal());
         SkullMeta skullMeta = (SkullMeta)itemStack.getItemMeta();
         skullMeta.setOwner("meiskam");
         itemStack.setItemMeta(skullMeta);
